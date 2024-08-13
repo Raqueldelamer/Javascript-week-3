@@ -2,24 +2,34 @@ const pet = {
     name: "Minou",
     species: "cat",
     happiness: "50",
-    status: "fed", 
 
 
-// console.log(pet.name);
-// console.log(pet.species);
-// console.log(pet.happiness);
- 
- feedMinou: function() {
-    this.console.log(`${this.name} has been fed!`);
-    this.happiness+=10;
+ "petPlay": function() {
+    console.log(`Pet name: ${this.name}, Species: ${this.species}, Happiness: ${this.happiness}`);
+    console.log(`this.happiness+=10`);
  },
- status: function(){
-    console.log(`Pet Status..${this.name}, happiness: ${this.status},`)
- }
-} 
-console.log(`${pet.name} is ${pet.happiness}`);
-pet.status();
 
+ "petFeed": function(){
+    console.log(`Pet Status..`)
+    
+ },
+ "petStatus": function(){
+
+   }
+} 
+//console.log(`${pet.name} is ${pet.happiness}`);
+//pet.fed();
+//pet.happy();
+//pet.fed();
+//pet.happy();
+
+// function add(happiness, status) {
+ //   return happiness+status;
+// }
+console.log(pet.petPlay());
+console.log(pet.name);
+console.log(pet.species);
+console.log(pet.happiness);
 
 
 
