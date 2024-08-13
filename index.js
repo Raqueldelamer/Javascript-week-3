@@ -1,24 +1,28 @@
 const pet = {
     name: "Minou",
     species: "cat",
-    happiness: "50", 
-};
-
-console.log(pet.name);
-console.log(pet.species);
-console.log(pet.happiness);
+    happiness: "50",
+    status: "fed", 
 
 
+// console.log(pet.name);
+// console.log(pet.species);
+// console.log(pet.happiness);
+ 
+ feedMinou: function() {
+    this.console.log(`${this.name} has been fed!`);
+    this.happiness+=10;
+ },
+ status: function(){
+    console.log(`Pet Status..${this.name}, happiness: ${this.status},`)
+ }
+} 
+console.log(`${pet.name} is ${pet.happiness}`);
+pet.status();
 
-const pet2 = {};
-// Add Properties
-pet2.Name = "Sheba";
-pet2.Species = "cat";
-pet2.Happiness = "50";
 
-console.log(pet2.Name);
-console.log(pet2.Species);
-console.log(pet2.Happiness);
+
+
 
 
 // great js object examples https://www.w3schools.com/js/js_objects.asp
