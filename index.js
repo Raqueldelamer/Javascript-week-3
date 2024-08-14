@@ -20,23 +20,7 @@ pet.status();
 pet.addHappiness();
 pet.status();
 
-//console.log(`${pet.name} is ${pet.happiness}`);
-//pet.fed();
-//pet.happy();
-//pet.fed();
-//pet.happy();
 
-// function add(happiness, status) {
- //   return happiness+status;
-// }
-// console.log(pet.petPlay());
-console.log(pet.name);
-console.log(pet.species);
-console.log(pet.happiness);
-// console.log("\nToDo 2: City")
-// city.status();
-// city.addPop();
-// city.status();
 
 
 
