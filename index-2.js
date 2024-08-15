@@ -1,33 +1,45 @@
 console.log("Factory Function with Pets");
-function createPet(nameInput, ageInput, energyInput) {
+
+function createPet(nameInput, speciesInput, energyInput, happinessInput) {
   let pet= {
     name: nameInput,
-    age: ageInput,
+    species: speciesInput,
     energy: energyInput,
-    addEnergy: function() {
+    happiness: happinessInput,
+    status() {
+      console.log(`Name: ${this.name} Species: ${this.species} Energy: ${this.energy} Happiness: ${this.happiness}`);
+     },
+
+    addPlay() {
       this.energy += 20;
-      console.log(`Name: ${this.name} Age: ${this.age} Energy: ${this.energy}`)
-      console.log(`After eating, ${this.name} has the energy level ${this.energy}!`)
+      this.happiness += 10;
+     
+      console.log(`After playing, ${this.name} happy level is ${this.happiness}!`);
     },
-    status: function() {
-      //console.log(`Name: ${this.name} Age: ${this.age} Energy: ${this.energy}`)
-      console.log(`Holy bazuka! ${this.name} has energy level ${this.energy}!`)
-      
-    }
+    
+     addFeed() {
+      this.energy += 20;
+      this.happiness += 20;
+      console.log(`After eating ${this.name}, happiness is now ${this.happiness}, and energy is now ${this.energy}.`);
+   }
   }
+
   pet.status()
   return pet;
 }
 
-let pet1 = createPet("Minou", 3, 100);
-let pet2 = createPet("Sheba", 2, 100);
-let pet3 = createPet("Orpheo", 1, 100);
+let pet1 = createPet("Minou", "Cat", 100, 100);
+let pet2 = createPet("Sheba", "Cat", 100, 100);
+let pet3 = createPet("Orpheo", "Cat", 100, 100);
 
-pet1.addEnergy();
+pet1.addPlay();
 pet1.status();
-pet2.addEnergy();
+pet1.addFeed();
+pet2.addPlay();
 pet2.status();
-pet3.addEnergy();
+pet2.addFeed();
+pet3.addPlay();
 pet3.status();
+pet3.addFeed();
 
 
