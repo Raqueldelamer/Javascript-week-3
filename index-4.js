@@ -16,7 +16,7 @@ function createPet(nameInput, speciesInput, happinessInput, energyInput) {
         feed() {
             this.energy += 20;
             this.happiness += 20;
-            console.log(`After feeding ${this.name}, energy level is ${this.energy} and happiness level is at ${this.happiness}.`);
+            console.log(`After feeding ${this.name}, energy level is ${this.energy} and happiness level is now at ${this.happiness}.`);
         }
     }
     //pet.status()
