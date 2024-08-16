@@ -27,14 +27,7 @@ let pet2 = createPet("Sheba", "Cat", 100, 100);
 let pet3 = createPet("Orpheo", "Cat", 100, 100);
 
 
-//let kennel = [];
-//kennel.push(pet1);
-//kennel.push(pet2);
-//kennel[kennel.length] = pet3
-//console.log(kennel);
-//kennel.forEach(pet => pet.play());
-//console.log(kennel);
-//kennel[0].play()
+
 
 let catKennel = [];
 catKennel.push(pet1);
