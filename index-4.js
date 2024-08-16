@@ -26,9 +26,6 @@ let pet1 = createPet("Minou", "Cat", 100, 100);
 let pet2 = createPet("Sheba", "Cat", 100, 100);
 let pet3 = createPet("Orpheo", "Cat", 100, 100);
 
-
-
-
 let catKennel = [];
 catKennel.push(pet1);
 catKennel.push(pet2);
@@ -69,14 +66,11 @@ for (let i=0; i < fishTank.length; i++) {
     fishTank[i].feed();
 }
 
-let pet7 = createPet("Honey", "Dog", 90, 100);
-let pet8 = createPet("Smoke", "Dog", 100, 80);
-let pet9 = createPet("Jack", "Dog", 80, 100);
 
 let dogKennel = [];
-dogKennel.push(pet7);
-dogKennel.push(pet8);
-dogKennel.push(pet9);
+dogKennel.push(createPet("Honey", "Dog", 90, 100));
+dogKennel.push(createPet("Smoke", "Dog", 100, 80));
+dogKennel.push(createPet("Jack", "Dog", 80, 100));
 dogKennel.push(createPet("Pookie", "Dog", 100, 100));
 dogKennel.push(createPet("Frank", "Dog", 100, 80));
 dogKennel.push(createPet("Ginger", "Dog", 100, 100));
