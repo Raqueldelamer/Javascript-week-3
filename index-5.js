@@ -48,8 +48,3 @@ for (let i=0; i < catKennel.length; i++) {
 }
 }
 
-
-  //for (let i=0; i < catKennel.length; i++)  {
-//    console.log(`${catKennel[i].name} has the energy level of ${catKennel[i].energy} and is indicating that it wants to be fed again.`)  
-//}
-//}
