@@ -39,7 +39,7 @@ console.table(catKennel)
 
 
 
-for (let i=0; i < catKennel.length; i++) {
+for (let i=0; i < catKennel.length; i++) {       // conditional feeding according to energy level
     console.log(`${catKennel[i].name} has the energy level of ${catKennel[i].energy} and is indicating that it wants to be fed`)
 
     if(catKennel[i].energy < 50) {    //conditional if cat energy level is < 50 , feed them
