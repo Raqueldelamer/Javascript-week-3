@@ -10,7 +10,7 @@ function createPet(nameInput, speciesInput, happinessInput, energyInput) {
         },
         play() {
             this.energy -= 20;
-            this.happiness += 10;
+            this.happiness += 30;
             console.log(`After playing with ${this.name} happiness is ${this.happiness} and energy is ${this.energy}.`);
         },
         feed() {
@@ -19,7 +19,7 @@ function createPet(nameInput, speciesInput, happinessInput, energyInput) {
             console.log(`After feeding ${this.name}, energy level is ${this.energy} and happiness level is now at ${this.happiness}.`);
         }
     }
-    //pet.status()
+    
     return pet;
 }
 let pet1 = createPet("Minou", "Cat", 100, 100);
@@ -33,7 +33,7 @@ catKennel.push(pet3);
 catKennel.push(createPet("Twinkle", "Cat", 100, 100));
 catKennel.push(createPet("Onyx", "Cat", 100, 80));
 catKennel.push(createPet("Cloe", "Cat", 100, 100));
-console.table(catKennel)
+// console.table(catKennel)
 catKennel.forEach(pet => pet.play());
 console.table(catKennel)
 catKennel.forEach(pet => pet.feed());
@@ -43,19 +43,16 @@ console.table(catKennel)
 for (let i=0; i < catKennel.length; i++) {
     catKennel[i].feed();
 }
-
-let pet4 = createPet("Max", "fish", 60, 60);
-let pet5 = createPet("Simone", "fish", 70, 80);
-let pet6 = createPet("Shark", "fish", 80, 100);
+console.table(catKennel)
 
 let fishTank = [];
-fishTank.push(pet4);
-fishTank.push(pet5);
-fishTank.push(pet6);
+
+fishTank.push(createPet("Max", "fish", 60, 60));
+fishTank.push(createPet("Simone", "fish", 70, 80));
+fishTank.push(createPet("Shark", "fish", 80, 100));
 fishTank.push(createPet("Nemo", "fish", 60,80));
 fishTank.push(createPet("Wanda", "fish", 80,80));
 fishTank.push(createPet("Spike", "fish", 60,80));
-console.table(fishTank)
 fishTank.forEach(pet => pet.play());
 console.table(fishTank)
 fishTank.forEach(pet => pet.feed());
@@ -65,6 +62,7 @@ console.table(fishTank)
 for (let i=0; i < fishTank.length; i++) {
     fishTank[i].feed();
 }
+console.table(fishTank)
 
 
 let dogKennel = [];
@@ -84,3 +82,4 @@ console.table(dogKennel)
 for (let i=0; i < dogKennel.length; i++) {
     dogKennel[i].feed();
 }
+console.table(dogKennel) 

@@ -8,20 +8,20 @@ function createPet(nameInput, speciesInput, energyInput, happinessInput) {
     happiness: happinessInput,
     status() {
       console.log(`Name: ${this.name} Species: ${this.species} Energy: ${this.energy} Happiness: ${this.happiness}`);
-     },
+    },
 
     addPlay() {
       this.energy += 20;
       this.happiness += 10;
-     
+    
       console.log(`After playing, ${this.name} happy level is ${this.happiness}!`);
     },
     
-     addFeed() {
+    addFeed() {
       this.energy += 20;
       this.happiness += 20;
       console.log(`After eating ${this.name}, happiness is now ${this.happiness}, and energy is now ${this.energy}.`);
-   }
+  }
   }
 
   pet.status()

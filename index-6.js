@@ -1,4 +1,4 @@
-// Practice
+// Practice Example
 
 let kid1 = {
     name: "Alice",

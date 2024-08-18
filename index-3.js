@@ -1,4 +1,4 @@
- function createPet(nameInput, speciesInput, happinessInput, energyInput) {
+function createPet(nameInput, speciesInput, happinessInput, energyInput) {
     let pet = {
         name: nameInput,
         species: speciesInput,
@@ -19,7 +19,7 @@
             console.log(`After feeding ${this.name}, energy level is ${this.energy} and happiness level is at ${this.happiness}.`);
         }
     }
-    //pet.status()
+    
     return pet;
 }
 let pet1 = createPet("Minou", "Cat", 100, 100);
@@ -28,10 +28,11 @@ let pet3 = createPet("Orpheo", "Cat", 100, 100);
 
 let kennel = [];
 
-kennel.push(pet1);
+kennel.push(pet1); 
 kennel.push(pet2);
 kennel[kennel.length] = pet3
 console.log(kennel);
 kennel.forEach(pet => pet.play());
 console.log(kennel);
-kennel[0].play()
+kennel[0].play()       // play with cat 1 more
+console.table(kennel) // console.table to log objects' factory functions in a table
